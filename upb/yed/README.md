@@ -1,5 +1,7 @@
 # yEd UPB
 
+![](example.png)
+
 - Get the Software: [yEd Graph Editor](https://www.yworks.com/products/yed)
 - The palettes use the font Roboto Condensed. Get it at [fonts.google.com](https://fonts.google.com/specimen/Roboto+Condensed) or [github.com](https://github.com/googlefonts/roboto)
 - Colors are not the same, but based on the [UPB corporate design](https://www.uni-paderborn.de/universitaet/presse-kommunikation-marketing/corporate-design)
@@ -27,5 +29,3 @@
 - Select your favourite format (SVG, PDF, PNG, ...)
 - Set Margin: 3 (for instance, use at least 1)
 - Set Scaling Factor: 0.8 (to match 16 pt; 20 pt * 0.8 = 16 pt)
-
-![](example.png)
