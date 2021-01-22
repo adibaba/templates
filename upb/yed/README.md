@@ -11,8 +11,7 @@
 - Click on Edit
 - Click on Manage Palette...
 - Click on Import Section...
-- Select upb-palette-rectagle.yed.graphml or  
-  upb-palette-round-rectagle.yed.graphml
+- Select upb-palette.yed.graphml
 
 ## Beautify graph
 
