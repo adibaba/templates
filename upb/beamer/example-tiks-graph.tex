@@ -1,0 +1,28 @@
+% Source: https://github.com/adibaba/templates
+% Author: Adrian Wilke
+% Date:   2021-01-23
+\documentclass{beamer}
+\usetheme{upb}
+
+% TikZ / PGF
+% https://www.ctan.org/pkg/pgf
+\usepackage{tikz}
+\usetikzlibrary{shapes,positioning}
+\usetikzlibrary{arrows.meta,arrows}
+\tikzset{resource/.style={draw,rectangle,fill=upb4blue,rounded corners,inner sep=5pt} }
+\tikzset{literal/.style={draw,rectangle,fill=upb4green,inner sep=5pt}}
+\tikzset{>=triangle 45}
+\tikzset{every picture/.style=thick}
+
+\begin{document}
+
+\begin{frame}{RDF Triple}
+	\centering
+	\begin{tikzpicture}[node distance=1cm and 2cm] 
+		\node[resource] (pb) {Paderborn}; 
+		\node[literal, right=of pb] (code) {05251};
+		\draw[->] (pb) -- node[above]{areaCode} (code);
+	\end{tikzpicture}
+\end{frame}
+
+\end{document}

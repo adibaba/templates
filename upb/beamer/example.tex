@@ -1,0 +1,59 @@
+% Source: https://github.com/adibaba/templates
+% Author: Adrian Wilke
+% Date:   2021-01-23
+\documentclass{beamer}
+\usetheme{upb}
+\input{meta.tex}
+
+% lipsum – Easy access to the Lorem Ipsum dummy text
+% https://ctan.org/pkg/lipsum
+\usepackage{lipsum}
+
+\author[A.~Wilke]{Adrian Wilke}
+\institute[]{DICE Group\\Paderborn University}
+\title[Beamer Template]{A LaTeX Beamer Template}
+\subtitle{Presentation Slides}
+\date{\today}
+
+\begin{document}
+
+{\setbeamertemplate{footline}{} 
+	\frame{\titlepage}
+}\addtocounter{framenumber}{-1}
+
+\begin{frame}{Contents}
+	\tableofcontents
+\end{frame}
+
+\section{Section}
+\subsection{Subsection}
+
+\begin{frame}{Frametitle}{Framesubtitle}
+	\begin{block}{This is a Block}
+	\begin{itemize}
+		\item This is an item
+		\item This item contains \alert{important information}
+	\end{itemize}
+	\end{block}
+	\begin{alertblock}{This is an Alert block}
+		\begin{enumerate}
+		\item This is an important alert
+		\item This also.
+	\end{enumerate}
+	\end{alertblock}
+	\begin{exampleblock}{This is an Example block}
+		This is an example 
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Two-column slide}
+	\begin{columns}
+	\column{0.5\textwidth}
+	\lipsum[23]
+	\column{0.5\textwidth}
+	\lipsum[4]
+	\end{columns}
+\end{frame}
+
+\end{document}
