@@ -22,7 +22,7 @@
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
-	linkcolor=templatefg,
+	linkcolor=templatetext,
 	urlcolor=urls
 }
 
@@ -71,9 +71,11 @@
 \newcommand{\green}[1]{\textcolor{textgreen}{#1}}
 \newcommand{\gray}[1]{\textcolor{textgray}{#1}}
 
-\newcommand{\term}[1]{\textit{#1}}
-\newcommand{\tech}[1]{\texttt{#1}}
+% Predefined text concepts
 \renewcommand{\alert}[1]{\textbf{\red{#1}}}
 \renewcommand{\emph}[1]{\blue{#1}}
 \newcommand{\good}[1]{\turquoise{#1}}
 \newcommand{\bad}[1]{\purple{#1}}
+\newcommand{\heading}[1]{\textbf{#1}\\\vspace*{.05cm}}
+\newcommand{\term}[1]{\textit{#1}}
+\newcommand{\tech}[1]{\texttt{#1}}

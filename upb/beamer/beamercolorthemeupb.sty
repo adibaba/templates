@@ -1,8 +1,10 @@
 % Usage:  \usecolortheme{upb}
 % Source: https://github.com/adibaba/templates
 % Author: Adrian Wilke
-% Date:   2021-01-24
+% Date:   2021-01-26
 \mode<presentation>
+
+
 
 % Color definitions
 
@@ -21,99 +23,90 @@
 \definecolor{upb2orange}{HTML}{f29512}
 \definecolor{upb2purple}{HTML}{a93983}
 
-% https://www.uni-paderborn.de/en/university/press-communications-marketing/corporate-design-manual (2016)
-
 % UPB active 
+% https://www.uni-paderborn.de/en/university/press-communications-marketing/corporate-design-manual (2016)
 \definecolor{upbayellow}{HTML}{ffc600}
 \definecolor{upbared}{HTML}{c63527}
+\definecolor{upbapurple}{HTML}{8a1b61}
 \definecolor{upbaturquoise}{HTML}{009b77}
 
 % Text
-\definecolor{textorange}{HTML}{d27c00} % darker
-\colorlet{textred}{upbared}
-\definecolor{textpurple}{HTML}{8a1b61} % darker
+\definecolor{textorange}{HTML}{bf7000} % darker
+\definecolor{textred}{HTML}{c92111} % darker
+\colorlet{textpurple}{upbapurple} % alternative
 \colorlet{textblue}{upb2blue}
 \colorlet{textdarkblue}{upbblue}
-\colorlet{textturquoise}{upbaturquoise}
-\definecolor{textgreen}{HTML}{6c8700} % darker
-\colorlet{textgray}{upbgraydark}
+\definecolor{textturquoise}{HTML}{007e62} % darker
+\definecolor{textgreen}{HTML}{596f00} % darker
+\definecolor{textgray}{HTML}{636363} % brighter
 
-\colorlet{urls}{upbblue}
+% Elements (e.g. graph nodes)
+\definecolor{elementgray}{HTML}{c6c6c6}
+\definecolor{elementblue}{HTML}{84c9e9}
+\definecolor{elementgreen}{HTML}{c0d95f}
+\definecolor{elementyellow}{HTML}{f8b961}
+\definecolor{elementpurple}{HTML}{d980bb}
+\definecolor{elementred}{HTML}{e47e75}
+\definecolor{elementturquoise}{HTML}{d980bb}
 
-% boxes
-\definecolor{bluebg}{HTML}{d5effc}
-\definecolor{bluebgtitle}{HTML}{ace0f8}
-\definecolor{redbg}{HTML}{f7d8d5}
-\definecolor{redbgtitle}{HTML}{efb2ac}
-\definecolor{greenbg}{HTML}{eaf0d2}
-\definecolor{greenbgtitle}{HTML}{d5e1a7}
+% Light colors
+\definecolor{lightgray}{HTML}{e5e5e5}
+\definecolor{lightblue}{HTML}{c7e8f6}
+\definecolor{lightgreen}{HTML}{e4f1a7}
+\definecolor{lightyellow}{HTML}{fde0b8}
+\definecolor{lightpurple}{HTML}{efc6e2}
+\definecolor{lightred}{HTML}{f4c5c1}
+\definecolor{lightturquoise}{HTML}{beebe1}
 
-
-% Dark
-\definecolor{upb3blue}{HTML}{68cbec}
-\definecolor{upb3green}{HTML}{b1cd44}
-\definecolor{upb3yellow}{HTML}{f6b04d}
-\definecolor{upb3red}{HTML}{e4797c}
-\definecolor{upb3gray}{HTML}{a9a9a9}
-\definecolor{upb3purple}{HTML}{cf92ba}
-
-% Light
-\definecolor{upb4blue}{HTML}{a2dff3}
-\definecolor{upb4green}{HTML}{d1e191}
-\definecolor{upb4yellow}{HTML}{f9cf94}
-\definecolor{upb4red}{HTML}{f1b7b9}
-\definecolor{upb4gray}{HTML}{c3c3c3}
-\definecolor{upb4purple}{HTML}{e1bad3}
-
-% Highlight
-\definecolor{upb5blue}{HTML}{ebf7ff}
-\definecolor{upb5green}{HTML}{f6f7de}
-\definecolor{upb5yellow}{HTML}{fbe4c3}
-\definecolor{upb5red}{HTML}{f9e0e1}
-\definecolor{upb5gray}{HTML}{e5e5e5}
-\definecolor{upb5purple}{HTML}{f2e1ec}
-
-% Template
-\colorlet{templatelayoutbg}{upb5gray}
-\colorlet{templatefg}{black}
-\colorlet{templatetitlefg}{black}
+% Background colors
+\definecolor{backgroundgray}{HTML}{f6f6f6}
+\definecolor{backgroundblue}{HTML}{ecf7fc}
+\definecolor{backgroundgreen}{HTML}{f5fae2}
+\definecolor{backgroundyellow}{HTML}{fff4e6}
+\definecolor{backgroundpurple}{HTML}{f9ebf4}
+\definecolor{backgroundred}{HTML}{fbebea}
+\definecolor{backgroundturquoise}{HTML}{e9f8f4}
 
 
 
 % Template elements
 
+\colorlet{templatetext}{black}
+\colorlet{templateheadings}{black}
+\colorlet{templatebackground}{white}
+
+% Text
+\setbeamercolor{alerted text}{fg=textred}
+\colorlet{urls}{upbblue}
+
 % Title, sub-title
-\setbeamercolor{titlelike}{fg=templatetitlefg}
-\setbeamercolor{frametitle}{bg=white,fg=templatetitlefg}
+\setbeamercolor{titlelike}{fg=templateheadings}
+\setbeamercolor{frametitle}{bg=templatebackground,fg=templateheadings}
 
 % Boxes
-\setbeamercolor{block title}{bg=bluebgtitle,fg=templatefg}
-\setbeamercolor{block body}{bg=bluebg}
-\setbeamercolor{block title alerted}{bg=redbgtitle,fg=templatefg}
-\setbeamercolor{block body alerted}{bg=redbg}
-\setbeamercolor{block title example}{bg=greenbgtitle,fg=templatefg}
-\setbeamercolor{block body example}{bg=greenbg}
-
-% Alert text
-\setbeamercolor{alerted text}{fg=textred}
+\setbeamercolor{block title}{bg=lightblue,fg=templatetext}
+\setbeamercolor{block body}{bg=backgroundblue}
+\setbeamercolor{block title alerted}{bg=lightred,fg=templatetext}
+\setbeamercolor{block body alerted}{bg=backgroundred}
+\setbeamercolor{block title example}{bg=lightgreen,fg=templatetext}
+\setbeamercolor{block body example}{bg=backgroundgreen}
 
 % Items
-\setbeamercolor{structure}{fg=templatefg}
-\setbeamercolor{local structure}{fg=templatefg}
+\setbeamercolor{structure}{fg=templatetext}
+\setbeamercolor{local structure}{fg=templatetext}
 
 % Palette
-\setbeamercolor{palette primary}{bg=white,fg=templatefg}
-\setbeamercolor{palette secondary}{bg=white,fg=templatefg}
-\setbeamercolor{palette tertiary}{bg=white,fg=templatefg}
-\setbeamercolor{palette quaternary}{bg=white,fg=templatefg}
+\setbeamercolor{palette primary}{bg=templatebackground,fg=templatetext}
+\setbeamercolor{palette secondary}{bg=templatebackground,fg=templatetext}
+\setbeamercolor{palette tertiary}{bg=templatebackground,fg=templatetext}
+\setbeamercolor{palette quaternary}{bg=templatebackground,fg=templatetext}
 
 % Sidebar (not used)
-%\useoutertheme{sidebar}
-\setbeamercolor{sidebar}{bg=templatelayoutbg,fg=templatefg}
-\setbeamercolor{palette sidebar primary}{bg=templatelayoutbg,fg=templatefg}
-\setbeamercolor{palette sidebar secondary}{bg=templatelayoutbg,fg=templatefg}
-\setbeamercolor{palette sidebar tertiary}{bg=templatelayoutbg,fg=templatefg}
-\setbeamercolor{palette sidebar quaternary}{bg=templatelayoutbg,fg=templatefg}
+\setbeamercolor{sidebar}{bg=templatebackground,fg=templatetext}
+\setbeamercolor{palette sidebar primary}{bg=templatebackground,fg=templatetext}
+\setbeamercolor{palette sidebar secondary}{bg=templatebackground,fg=templatetext}
+\setbeamercolor{palette sidebar tertiary}{bg=templatebackground,fg=templatetext}
+\setbeamercolor{palette sidebar quaternary}{bg=templatebackground,fg=templatetext}
 
 \mode
 <all>
