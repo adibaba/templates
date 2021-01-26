@@ -2,10 +2,12 @@
 % Source: https://github.com/adibaba/templates
 % Author: Adrian Wilke
 % Date:   2021-01-22
+
 \mode<presentation>
 
 % Left aligned content
-\useoutertheme{infolines}
+\useoutertheme{upb}
+%\useoutertheme{infolines}
 
 % No header
 \setbeamertemplate{headline}{}
@@ -18,21 +20,17 @@
 \usefonttheme{default}
 
 
-
-% Fonts
-
-% Official UPB: FF Meta
-% Official UPB alternatives: Arial, Arial Narrow
-% Fontspec requires XeTeX or LuaTeX, not PDFLaTeX
-%\usepackage{fontspec}
-%\setsansfont[Ligatures=TeX]{Arial Narrow}
-
-% Font Roboto Condensed
-% https://tug.org/FontCatalogue/robotocondensed/
-\usepackage[sfdefault,condensed]{roboto}
+% Font template
 
 \setbeamerfont{title}{size=\huge,series=\bfseries}
-\setbeamerfont{subtitle}{size=\Large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\large,series=\bfseries}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{institute}{size=\small}
+
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{size=\normalsize}
 
 
 % Settings
@@ -40,12 +38,8 @@
 % Disable navigation symbols
 \setbeamertemplate{navigation symbols}{}
 
-
-
-%\setbeamerfont{block title}{size={}}
-%\setbeamercolor{titlelike}{parent=structure,bg=yellow!85!orange}
-
-
+\setbeamertemplate{itemize items}{\raise1.0pt\hbox{\donotcoloroutermaths\small$\blacktriangleright$}}
+%\setbeamertemplate{itemize item}{default}{\usebeamerfont*{itemize item}%\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
 
 \mode
 <all>

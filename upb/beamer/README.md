@@ -13,6 +13,8 @@
 * Themes overview:
     * https://hartwork.org/beamer-theme-matrix/
     * https://en.wikibooks.org/wiki/LaTeX/Presentations#Themes
+* Packages:  
+  https://ctan.org/topic/presentation
 
 ## UPB
 
@@ -27,3 +29,4 @@
 * https://github.com/matze/mtheme
 * https://github.com/deuslirio/UFGTeX-Presentation
 * https://www.overleaf.com/gallery/tagged/presentation
+* https://ctan.org/pkg/beamerthemenord

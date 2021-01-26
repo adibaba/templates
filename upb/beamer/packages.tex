@@ -1,0 +1,79 @@
+% Source: https://github.com/adibaba/templates
+% Author: Adrian Wilke
+% Date:   2021-01-24
+
+% Packages
+
+% inputenc - Accept different input encodings
+% https://ctan.org/pkg/inputenc
+\usepackage[utf8]{inputenc}
+
+% fontenc – Standard package for selecting font encodings
+% https://ctan.org/pkg/fontenc
+\usepackage[T1]{fontenc}
+
+% babel - Multilingual support for Plain TEX or LATEX
+% https://ctan.org/pkg/babel
+\usepackage[english]{babel}
+%\usepackage[german]{babel}
+
+% hyperref – Extensive support for hypertext in LATEX
+% https://ctan.org/pkg/hyperref
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=templatefg,
+	urlcolor=urls
+}
+
+% appendixnumberbeamer – Manage frame numbering in appendixes in beamer
+% https://ctan.org/pkg/appendixnumberbeamer
+\usepackage{appendixnumberbeamer} 
+
+
+
+% Fonts
+% https://tug.org/FontCatalogue/
+
+% Math font
+% https://ctan.org/pkg/free-math-font-survey
+\usepackage{cmbright}
+
+% Mono font
+\usepackage{nimbusmononarrow}
+
+% Official UPB: FF Meta
+% Official UPB alternatives: Arial, Arial Narrow
+% Fontspec requires XeTeX or LuaTeX, not PDFLaTeX
+%\usepackage{fontspec}
+%\setsansfont[Ligatures=TeX]{Arial Narrow}
+
+% Font Roboto Condensed
+% https://tug.org/FontCatalogue/robotocondensed/
+% https://ctan.org/pkg/roboto
+\usepackage[sfdefault,condensed]{roboto}
+
+% TODO Math sans serif part
+%\renewcommand*\ttdefault{lcmtt}
+%https://tug.org/FontCatalogue/computermodernteletypel/
+
+
+
+% Commands
+
+% Text color
+\newcommand{\orange}[1]{\textcolor{textorange}{#1}}
+\newcommand{\red}[1]{\textcolor{textred}{#1}}
+\newcommand{\purple}[1]{\textcolor{textpurple}{#1}}
+\newcommand{\blue}[1]{\textcolor{textblue}{#1}}
+\newcommand{\darkblue}[1]{\textcolor{textdarkblue}{#1}}
+\newcommand{\turquoise}[1]{\textcolor{textturquoise}{#1}}
+\newcommand{\green}[1]{\textcolor{textgreen}{#1}}
+\newcommand{\gray}[1]{\textcolor{textgray}{#1}}
+
+\newcommand{\term}[1]{\textit{#1}}
+\newcommand{\tech}[1]{\texttt{#1}}
+\renewcommand{\alert}[1]{\textbf{\red{#1}}}
+\renewcommand{\emph}[1]{\blue{#1}}
+\newcommand{\good}[1]{\turquoise{#1}}
+\newcommand{\bad}[1]{\purple{#1}}

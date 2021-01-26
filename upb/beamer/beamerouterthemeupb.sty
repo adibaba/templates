@@ -1,0 +1,50 @@
+% Usage:  \useoutertheme{upb}
+% Source: https://github.com/adibaba/templates
+% Author: Adrian Wilke
+% Date:   2021-01-24
+
+\mode<presentation>
+
+\setbeamercolor*{author in head/foot}{parent=palette secondary}
+\setbeamercolor*{page number in head/foot}{parent=palette secondary}
+
+\defbeamertemplate*{frametitle}{upb theme}[1][center]
+{%
+  \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by\beamer@leftmargin%
+  \advance\@tempdima by\beamer@rightmargin%
+  \begin{beamercolorbox}[sep=0.3cm,#1,wd=\the\@tempdima]{frametitle}
+    \usebeamerfont{frametitle}%
+    \vbox{}\vskip-1ex%
+    \if@tempswa\else\csname beamer@fte#1\endcsname\fi%
+    \strut\insertframetitle\strut\par%
+    {%
+      \ifx\insertframesubtitle\@empty%
+      \else%
+      {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\strut\insertframesubtitle\strut\par}%
+      \fi
+    }%
+    \vskip-1ex%
+    \if@tempswa\else\vskip-.3cm\fi%
+  \end{beamercolorbox}%
+}
+
+\defbeamertemplate*{footline}{upb theme}
+{%
+  \leavevmode%
+\hbox{%
+\begin{beamercolorbox}[wd=.9\paperwidth,ht=2.25ex,dp=1.2ex,left]{author in head/foot}%
+\hspace*{2mm}%
+\insertshortauthor:~\textbf{\insertshorttitle}%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1.2ex,right]{page number in head/foot}%
+\textbf{\insertframenumber}~/~\inserttotalframenumber%
+\hspace*{2mm} 
+\end{beamercolorbox}}%
+}
+
+\setbeamersize{text margin left=10mm,text margin right=10mm}
+
+\mode
+<all>

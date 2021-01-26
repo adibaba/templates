@@ -1,14 +1,12 @@
 % Usage:  \usecolortheme{upb}
 % Source: https://github.com/adibaba/templates
 % Author: Adrian Wilke
-% Date:   2021-01-22
+% Date:   2021-01-24
 \mode<presentation>
 
+% Color definitions
 
-
-% Colors
-
-% https://www.uni-paderborn.de/universitaet/presse-kommunikation-marketing/design-vorgaben-templates/farben
+% https://www.uni-paderborn.de/en/university/press-communications-marketing/design-vorgaben-templates/colors (2018)
 
 % UPB primary
 \definecolor{upbblue}{HTML}{00205b}
@@ -22,6 +20,34 @@
 \definecolor{upb2green}{HTML}{a4c424}
 \definecolor{upb2orange}{HTML}{f29512}
 \definecolor{upb2purple}{HTML}{a93983}
+
+% https://www.uni-paderborn.de/en/university/press-communications-marketing/corporate-design-manual (2016)
+
+% UPB active 
+\definecolor{upbayellow}{HTML}{ffc600}
+\definecolor{upbared}{HTML}{c63527}
+\definecolor{upbaturquoise}{HTML}{009b77}
+
+% Text
+\definecolor{textorange}{HTML}{d27c00} % darker
+\colorlet{textred}{upbared}
+\definecolor{textpurple}{HTML}{8a1b61} % darker
+\colorlet{textblue}{upb2blue}
+\colorlet{textdarkblue}{upbblue}
+\colorlet{textturquoise}{upbaturquoise}
+\definecolor{textgreen}{HTML}{6c8700} % darker
+\colorlet{textgray}{upbgraydark}
+
+\colorlet{urls}{upbblue}
+
+% boxes
+\definecolor{bluebg}{HTML}{d5effc}
+\definecolor{bluebgtitle}{HTML}{ace0f8}
+\definecolor{redbg}{HTML}{f7d8d5}
+\definecolor{redbgtitle}{HTML}{efb2ac}
+\definecolor{greenbg}{HTML}{eaf0d2}
+\definecolor{greenbgtitle}{HTML}{d5e1a7}
+
 
 % Dark
 \definecolor{upb3blue}{HTML}{68cbec}
@@ -40,8 +66,8 @@
 \definecolor{upb4purple}{HTML}{e1bad3}
 
 % Highlight
-\definecolor{upb5blue}{HTML}{d0eff9}
-\definecolor{upb5green}{HTML}{e4eebd}
+\definecolor{upb5blue}{HTML}{ebf7ff}
+\definecolor{upb5green}{HTML}{f6f7de}
 \definecolor{upb5yellow}{HTML}{fbe4c3}
 \definecolor{upb5red}{HTML}{f9e0e1}
 \definecolor{upb5gray}{HTML}{e5e5e5}
@@ -54,32 +80,32 @@
 
 
 
-% Elements
+% Template elements
 
 % Title, sub-title
 \setbeamercolor{titlelike}{fg=templatetitlefg}
-\setbeamercolor{frametitle}{bg=templatelayoutbg,fg=templatetitlefg}
+\setbeamercolor{frametitle}{bg=white,fg=templatetitlefg}
 
 % Boxes
-\setbeamercolor{block title}{bg=upb4blue,fg=templatefg}
-\setbeamercolor{block body}{bg=upb5blue}
-\setbeamercolor{block title alerted}{bg=upb4purple,fg=templatefg}
-\setbeamercolor{block body alerted}{bg=upb5purple}
-\setbeamercolor{block title example}{bg=upb4green,fg=templatefg}
-\setbeamercolor{block body example}{bg=upb5green}
+\setbeamercolor{block title}{bg=bluebgtitle,fg=templatefg}
+\setbeamercolor{block body}{bg=bluebg}
+\setbeamercolor{block title alerted}{bg=redbgtitle,fg=templatefg}
+\setbeamercolor{block body alerted}{bg=redbg}
+\setbeamercolor{block title example}{bg=greenbgtitle,fg=templatefg}
+\setbeamercolor{block body example}{bg=greenbg}
 
 % Alert text
-\setbeamercolor{alerted text}{fg=upb2purple}
+\setbeamercolor{alerted text}{fg=textred}
 
 % Items
 \setbeamercolor{structure}{fg=templatefg}
 \setbeamercolor{local structure}{fg=templatefg}
 
 % Palette
-\setbeamercolor{palette primary}{bg=templatelayoutbg,fg=templatefg}
-\setbeamercolor{palette secondary}{bg=templatelayoutbg,fg=templatefg}
-\setbeamercolor{palette tertiary}{bg=templatelayoutbg,fg=templatefg}
-\setbeamercolor{palette quaternary}{bg=templatelayoutbg,fg=templatefg}
+\setbeamercolor{palette primary}{bg=white,fg=templatefg}
+\setbeamercolor{palette secondary}{bg=white,fg=templatefg}
+\setbeamercolor{palette tertiary}{bg=white,fg=templatefg}
+\setbeamercolor{palette quaternary}{bg=white,fg=templatefg}
 
 % Sidebar (not used)
 %\useoutertheme{sidebar}
