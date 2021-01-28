@@ -30,3 +30,8 @@
 * https://github.com/deuslirio/UFGTeX-Presentation
 * https://www.overleaf.com/gallery/tagged/presentation
 * https://ctan.org/pkg/beamerthemenord
+
+## Other LaTeX resources
+
+* https://en.wikibooks.org/wiki/LaTeX
+* https://www.overleaf.com/learn
