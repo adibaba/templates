@@ -4,19 +4,24 @@
 
 \documentclass{beamer}
 \usetheme{upb}
+%\usecolortheme{upb}
 \input{packages.tex}
 
-% 1st used for slides footer, 2nd for title & PDF metadata
+% 1st used for slides footer, 2nd for title slide & PDF metadata
 \author[A.~Wilke]{Adrian Wilke}
-\institute[dice]{DICE Group\\Paderborn University}
-% 1st used for slides footer, 2nd for title & PDF metadata
+% 1st used for slides footer, 2nd for title slide
+\institute[]{DICE Group\\Paderborn University}
+% 1st used for slides footer, 2nd for title slide & PDF metadata
 \title[Another LaTeX Beamer Template]{Another LaTeX Beamer Template}
+% Used for title slide & PDF metadata
 \subtitle{}
 \date{\today}
 
 \begin{document}
 
-\frame[plain]{\titlepage}
+{\usebackgroundtemplate{}
+\frame[plain]{\titlepage}}
+% Begin counting at second frame
 \addtocounter{framenumber}{-1}
 
 \section{Motivation}
@@ -25,12 +30,22 @@
 	\begin{columns}[T]
 	\column{0.5\textwidth}
 		\heading{Motivation}
-		After the title slide, typically a table of contents is presented. Make it more interesting by firstly \emph{introducing the problem} you are solving afterwards. That could also be on an own slide. Better than a long text like this is an image or keywords.
+		After the title slide, typically a table of contents is presented. Make it more interesting by firstly \emph{introducing the problem} you are solving afterwards. That could also be on an own slide. Better than a long text like this is an image or keywords. Almost always.
 	\column{0.5\textwidth}
 		\heading{Contents}\vspace*{.2cm}
 		\hypersetup{linkcolor=textblue}
 		\tableofcontents
 	\end{columns}
+\end{frame}
+
+\section{Features}
+\begin{frame}{Features}
+	\begin{itemize}
+		\item A simple template, \emph{focus on contents}
+		\item Example solutions for standard problems
+		\item Predefined default settings, colors, fonts \&  commands
+		\item Additional packages for Graphs \& code listings
+	\end{itemize}
 \end{frame}
 
 \section{Quick Start}
@@ -48,9 +63,7 @@
 \usetheme{upb}
 \input{packages.tex}
 \begin{document}
-\begin{frame}
-	Hello World
-@\textbackslash@end{frame}
+\begin{frame} Hello World @\textbackslash@end{frame}
 @\textbackslash@end{document}
 	\end{lstlisting}
 \end{frame}
@@ -85,7 +98,9 @@
 		\item[\tech{fragile}\hfill]
 		Specially interpreted contents, e.g. for listings
 		\item[\tech{plain}\hfill]
-		No headlines, footlines, sidebars; e.g. for large images
+		No headlines, footlines, sidebars; e.g. for large images\\
+		\gray{To also remove background images use:
+		\texttt{\{\textbackslash usebackgroundtemplate\{\}[...]\}}}
 		\item[\tech{squeeze}\hfill]
 		Squeezes vertical spaces, e.g. for long contents
 		\item[\tech{shrink}\hfill]
@@ -111,7 +126,7 @@
 \end{frame}
 
 \section{Blocks}
-\begin{frame}[squeeze]{Blocks}
+\begin{frame}[shrink]{Blocks}
 	\begin{block}{This is a Block}
 		\begin{itemize}
 			\item This is an item
@@ -138,19 +153,29 @@
 	\end{alertblock}
 \end{frame}
 
-\section{Appendix}
+\section{Graphs}
+\begin{frame}{Graphs}
+	\centering
+	\begin{tikzpicture}[node distance=1cm and 2cm] 
+		\node[resource] (pb) {Subject}; 
+		\node[literal, right=of pb] (code) {Object};
+		\draw[->] (pb) -- node[above]{Predicate} (code);
+	\end{tikzpicture}
+\end{frame}
+
+\section{Appendix \& References}
 \appendix 
 
 \begin{frame}{Appendix}{Predefined Text Colors}
 	\begin{itemize}
-		\item {\color{textorange}\rule{.7cm}{.4cm} textorange} \gray{(darker than original color)}
-		\item {\color{textred}\rule{.7cm}{.4cm} textred} \gray{(darker than original color)}
-		\item {\color{textpurple}\rule{.7cm}{.4cm} textpurple} \gray{(alternative color)}
+		\item {\color{textorange}\rule{.7cm}{.4cm} textorange}
+		\item {\color{textred}\rule{.7cm}{.4cm} textred}
+		\item {\color{textpurple}\rule{.7cm}{.4cm} textpurple}
 		\item {\color{textdarkblue}\rule{.7cm}{.4cm} textdarkblue}
 		\item {\color{textblue}\rule{.7cm}{.4cm} textblue}
-		\item {\color{textturquoise}\rule{.7cm}{.4cm} textturquoise} \gray{(darker than original color)}
-		\item {\color{textgreen}\rule{.7cm}{.4cm} textgreen} \gray{(darker than original color)}
-		\item {\color{textgray}\rule{.7cm}{.4cm} textgray} \gray{(darker than original color)}
+		\item {\color{textturquoise}\rule{.7cm}{.4cm} textturquoise}
+		\item {\color{textgreen}\rule{.7cm}{.4cm} textgreen}
+		\item {\color{textgray}\rule{.7cm}{.4cm} textgray}
 	\end{itemize}
 \end{frame}
 
@@ -177,6 +202,13 @@
 		      \href{https://www.uni-paderborn.de/en/university/press-communications-marketing/design-vorgaben-templates/colors}{The Colors of UPB} (2018) and
 		      \href{https://www.uni-paderborn.de/en/university/press-communications-marketing/corporate-design-manual}{The Corporate Design Manual} (2016)
 	\end{itemize}
+\end{frame}
+
+\begin{frame}[t,allowframebreaks]{References}
+	\scriptsize
+	\nocite{*}
+	\bibliographystyle{abbrv}
+	\bibliography{bibliography}
 \end{frame}
 
 \end{document}

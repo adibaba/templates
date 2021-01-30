@@ -1,45 +1,30 @@
 % Usage:  \usetheme{upb}
 % Source: https://github.com/adibaba/templates
 % Author: Adrian Wilke
-% Date:   2021-01-22
+% Date:   2021-01-30
 
 \mode<presentation>
 
-% Left aligned content
-\useoutertheme{upb}
-%\useoutertheme{infolines}
-
-% No header
-\setbeamertemplate{headline}{}
-
-% UPB colors
+% Colors
 \usecolortheme{upb}
+
+% Centered header, left aligned footer
+\useoutertheme{upb}
+
+% Fonts
+\usefonttheme{upb}
 
 % Defaults
 \useinnertheme{default}
-\usefonttheme{default}
-
-
-% Font template
-
-\setbeamerfont{title}{size=\huge,series=\bfseries}
-\setbeamerfont{subtitle}{size=\large,series=\bfseries}
-\setbeamerfont{author}{size=\normalsize}
-\setbeamerfont{date}{size=\small}
-\setbeamerfont{institute}{size=\small}
-
-\setbeamerfont{frametitle}{series=\bfseries}
-\setbeamerfont{frametitle}{size=\Large}
-\setbeamerfont{framesubtitle}{size=\normalsize}
-
-
-% Settings
 
 % Disable navigation symbols
 \setbeamertemplate{navigation symbols}{}
 
 % Itemize symbol
 \setbeamertemplate{itemize items}{\raise1.4pt\hbox{\donotcoloroutermaths\small$\blacktriangleright$}}
+
+% References
+\setbeamertemplate{bibliography item}[text]
 
 \mode
 <all>

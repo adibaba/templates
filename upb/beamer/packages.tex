@@ -2,6 +2,60 @@
 % Author: Adrian Wilke
 % Date:   2021-01-28
 
+
+
+% OPTIONAL: Background image with logos
+%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{background}}
+% Reduce max. frame title width
+%\renewcommand{\frametitlewidth}{.75\textwidth}
+
+% OPTIONAL: Alternative colors
+%\setbeamercolor{palette primary}{bg=lightgray}
+%\setbeamercolor{palette secondary}{bg=lightgray}
+%\setbeamercolor{palette tertiary}{bg=lightgray}
+%\setbeamercolor{frametitle}{bg=lightgray}
+
+% OPTIONAL: Alternative footer
+%\useoutertheme{infolines}
+%\setbeamertemplate{headline}{}
+%\setbeamerfont{title in head/foot}{series=\mdseries}
+
+
+
+% Optional packages
+% Can be removed if not used
+
+% pgf – Create PostScript and PDF graphics in TEX
+% https://www.ctan.org/pkg/pgf
+\usepackage{tikz}
+\usetikzlibrary{shapes,positioning}
+\usetikzlibrary{arrows.meta,arrows}
+\tikzset{resource/.style={draw,rectangle,fill=elementblue,rounded corners,inner sep=5pt} }
+\tikzset{literal/.style={draw,rectangle,fill=elementgreen,inner sep=5pt}}
+\tikzset{>=triangle 45}
+\tikzset{every picture/.style=thick}
+\tikzstyle{every node}=[font=\small]
+
+% listings – Typeset source code listings using LATEX
+% https://ctan.org/pkg/listings
+\usepackage{listings}
+\lstset{
+	basicstyle=\small\ttfamily,
+	%
+	keywordstyle=\color{textblue},
+	commentstyle=\color{textgray},
+	emphstyle=\color{textpurple},
+	%
+	numbers=left,
+	numbersep=7pt,
+	numberstyle=\scriptsize\color{textgray}\ttfamily,
+	%
+	tabsize=2,
+	breaklines=true
+}
+
+
+
 % Packages
 
 % inputenc - Accept different input encodings
@@ -20,23 +74,6 @@
 	colorlinks=true,
 	linkcolor=templatetext,
 	urlcolor=urls
-}
-
-% listings – Typeset source code listings using LATEX
-% https://ctan.org/pkg/listings
-\usepackage{listings}
-\lstset{
-	basicstyle=\ttfamily,
-	%
-	keywordstyle=\color{textblue},
-	commentstyle=\color{textgray},
-	emphstyle=\color{textpurple},
-	%
-	numbers=left,
-	numberstyle=\tiny\color{textgray},
-	%
-	tabsize=2,
-	breaklines=true
 }
 
 % appendixnumberbeamer – Manage frame numbering in appendixes in beamer

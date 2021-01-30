@@ -30,6 +30,7 @@
 * https://github.com/deuslirio/UFGTeX-Presentation
 * https://www.overleaf.com/gallery/tagged/presentation
 * https://ctan.org/pkg/beamerthemenord
+* https://indico-jsc.fz-juelich.de/event/16/material/slides/16.pdf
 
 ## Other LaTeX resources
 
