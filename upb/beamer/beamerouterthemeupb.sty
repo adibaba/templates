@@ -40,19 +40,20 @@
 % Page numbers in footer
 \setbeamertemplate{page number in head/foot}[totalframenumber]%
 
-% Footer based on infolines; two boxes instead of three ; 2ex -> 1ex
+% Footer based on infolines; two boxes instead of three; 2ex -> 1.2ex; ht=2.25ex,dp=1ex -> ht=2.6ex,dp=1.2ex; added 'page number in head/foot'
 \defbeamertemplate*{footline}{upb theme}
 {%
 \leavevmode%
 \hbox{%
-\begin{beamercolorbox}[wd=.9\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
-\hspace*{1ex}%
+\begin{beamercolorbox}[wd=.9\paperwidth,ht=2.6ex,dp=1.2ex,left]{author in head/foot}%
+\hspace*{1.2ex}%
 \usebeamerfont{author in head/foot}\insertshortauthor\expandafter\ifblank\expandafter{\beamer@shortinstitute}{}{~(\insertshortinstitute)}: %
 \usebeamerfont{title in head/foot}\insertshorttitle%
 \end{beamercolorbox}%
-\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,right]{page number in head/foot}%
+\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.6ex,dp=1.2ex,right]{page number in head/foot}%
+\usebeamerfont{page number in head/foot}%
 \usebeamertemplate{page number in head/foot}%
-\hspace*{1ex}%
+\hspace*{1.2ex}%
 \end{beamercolorbox}}%
 }
 

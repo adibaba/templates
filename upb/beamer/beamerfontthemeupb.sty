@@ -13,4 +13,10 @@
 \setbeamerfont{frametitle}{size=\Large}
 \setbeamerfont{framesubtitle}{size=\normalsize}
 
-\setbeamerfont{title in head/foot}{series=\bfseries}
+% Size between tiny and scriptsize
+% For examples see https://ctan.org/pkg/moresize
+\newcommand\tinyscript{\@setfontsize\tinyscript{6.5}{7}}
+
+\setbeamerfont{author in head/foot}{series=\tinyscript}
+\setbeamerfont{title in head/foot}{series=\tinyscript\bfseries}
+\setbeamerfont{page number in head/foot}{series=\tinyscript}

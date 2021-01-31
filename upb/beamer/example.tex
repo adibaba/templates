@@ -4,13 +4,12 @@
 
 \documentclass{beamer}
 \usetheme{upb}
-%\usecolortheme{upb}
 \input{packages.tex}
 
 % 1st used for slides footer, 2nd for title slide & PDF metadata
 \author[A.~Wilke]{Adrian Wilke}
 % 1st used for slides footer, 2nd for title slide
-\institute[]{DICE Group\\Paderborn University}
+\institute[DICE]{DICE Group\\Paderborn University}
 % 1st used for slides footer, 2nd for title slide & PDF metadata
 \title[Another LaTeX Beamer Template]{Another LaTeX Beamer Template}
 % Used for title slide & PDF metadata
@@ -24,28 +23,18 @@
 % Begin counting at second frame
 \addtocounter{framenumber}{-1}
 
-\section{Motivation}
+\section{Motivation \& Contents}
 
 \begin{frame}{Another LaTeX Beamer Template}
 	\begin{columns}[T]
-	\column{0.5\textwidth}
+	\column{0.45\textwidth}
 		\heading{Motivation}
 		After the title slide, typically a table of contents is presented. Make it more interesting by firstly \emph{introducing the problem} you are solving afterwards. That could also be on an own slide. Better than a long text like this is an image or keywords. Almost always.
-	\column{0.5\textwidth}
+	\column{0.55\textwidth}
 		\heading{Contents}\vspace*{.2cm}
 		\hypersetup{linkcolor=textblue}
 		\tableofcontents
 	\end{columns}
-\end{frame}
-
-\section{Features}
-\begin{frame}{Features}
-	\begin{itemize}
-		\item A simple template, \emph{focus on contents}
-		\item Example solutions for standard problems
-		\item Predefined default settings, colors, fonts \&  commands
-		\item Additional packages for Graphs \& code listings
-	\end{itemize}
 \end{frame}
 
 \section{Quick Start}
@@ -207,7 +196,7 @@
 \begin{frame}[t,allowframebreaks]{References}
 	\scriptsize
 	\nocite{*}
-	\bibliographystyle{abbrv}
+	\bibliographystyle{ieeetr}
 	\bibliography{bibliography}
 \end{frame}
 
