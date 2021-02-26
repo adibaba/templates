@@ -1,4 +1,4 @@
-# yEd UPB
+# yEd claw palette
 
 ![](example.png)
 
