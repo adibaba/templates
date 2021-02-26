@@ -1,0 +1,1 @@
+![](claw-colors.svg)
