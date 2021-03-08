@@ -3,25 +3,62 @@
 % Date:   2021-03-08
 
 \documentclass{beamer}
+
 % Alternative to \usetheme{claw}
 \usepackage{template/beamercolorthemeclaw}
 \usepackage{template/beamerfontthemeclaw}
 \usepackage{template/beamerinnerthemeclaw}
 \usepackage{template/beamerouterthemeclaw}
 
-
-
 \input{packages.tex}
 
-% 1st used for slides footer, 2nd for title slide & PDF metadata
-\author[A.~Wilke]{Adrian Wilke}
-% 1st used for slides footer, 2nd for title slide
-\institute[DICE]{DICE Group\\Paderborn University}
+
+
 % 1st used for slides footer, 2nd for title slide & PDF metadata
 \title[Claw LaTeX Beamer Template]{Claw LaTeX Beamer Template}
 % Used for title slide & PDF metadata
 \subtitle{}
+
 \date{\today}
+% Date with conference name
+%\date[\today]{Conference on Fabulous Presentations, 2021}
+
+% One author
+% 1st used for slides footer, 2nd for title slide & PDF metadata
+\author[A.~Wilke]{Adrian Wilke}
+
+% 1st used for slides footer, 2nd for title slide
+\institute[DICE]{DICE Group\\Paderborn University}
+% Institute with logo
+%\institute[DICE]{\includegraphics[height=1.1cm]{LOGO}\\Data Science Group}
+
+% Two authors from different institutes
+% Source: https://www.overleaf.com/learn/latex/Beamer#The_title_page
+%\author[\underline{Wilke}, Ngonga]{\underline{Adrian~Wilke}\inst{1} \and Axel~Ngonga\inst{2}}
+%\institute[]
+%{
+%	\inst{1}%
+%	DICE Group\\
+%	Department of Computer Science\\
+%	Paderborn University, Germany
+%	\and
+%	\inst{2}%
+%	DICE Group\\
+%	Department of Computer Science\\
+%	Paderborn University, Germany
+%}
+
+% One logo on title page
+%\titlegraphic{\includegraphics[height=1cm]{LOGO}}
+
+% Two logos on title page
+%\titlegraphic{
+%	\includegraphics[height=1cm]{LOGO}%
+%	\hspace*{2cm}~%
+%	\includegraphics[height=1cm]{LOGO2}%
+%}
+
+
 
 \begin{document}
 
