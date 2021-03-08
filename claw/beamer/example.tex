@@ -1,9 +1,16 @@
 % Source: https://github.com/adibaba/templates
 % Author: Adrian Wilke
-% Date:   2021-01-28
+% Date:   2021-03-08
 
 \documentclass{beamer}
-\usetheme{claw}
+% Alternative to \usetheme{claw}
+\usepackage{template/beamercolorthemeclaw}
+\usepackage{template/beamerfontthemeclaw}
+\usepackage{template/beamerinnerthemeclaw}
+\usepackage{template/beamerouterthemeclaw}
+
+
+
 \input{packages.tex}
 
 % 1st used for slides footer, 2nd for title slide & PDF metadata
@@ -68,9 +75,9 @@
 \begin{frame}{Text Formatting}{Predefined Styles}
 	\begin{itemize}
 		\item You could \emph{emphasize} important parts \\(Maybe distinguish between \bad{problems} and \good{solutions})
-		\item Highlight ``\term{predefined terms}'' like brands and\\ \tech{TechnicalTerms} like software components
 		\item Use alert to display \alert{warnings}
 		\item Use the url command for links (\url{https://github.com/adibaba/templates}) or href (\href{https://github.com/adibaba/templates}{template})
+		\item Highlight ``\term{predefined terms}'' like brands and\\ \tech{TechnicalTerms} like software components
 	\end{itemize}
 \end{frame}
 
@@ -80,7 +87,7 @@
 	\begin{itemize}
 		\item Text styles: \textbf{bold}, \textit{italic}, \underline{underlined}, \textsc{small caps}
 		\item Font families: \texttt{monospaced}, \textsf{sans serif}, \textrm{roman}
-		\item Text colors: \orange{orange}, \red{red}, \purple{purple}, \darkblue{darkblue}, \blue{blue}, \turquoise{turquoise}, \green{green}, \gray{gray}
+		\item Text colors: \orange{orange}, \red{red}, \purple{purple}, \darkblue{darkblue}, \blue{blue}, \turquoise{turquoise}, \green{green}, \gray{gray}, (\magenta{magenta})
 		\item Text sizes: {\tiny tiny}, {\scriptsize scriptsize}, {\footnotesize footnotesize}, {\small small}, {\normalsize normalsize}, {\large large}, {\Large Large}, {\LARGE LARGE}, {\huge huge}, {\Huge Huge}
 	\end{itemize}
 \end{frame}
@@ -90,15 +97,15 @@
 	Use these arguments to configure frames:
 	\setbeamercolor{local structure}{fg=textpurple}
 	\begin{description}
-		\item[\tech{fragile}\hfill]
+		\item[\texttt{fragile}\hfill]
 		Specially interpreted contents, e.g. for listings
-		\item[\tech{plain}\hfill]
+		\item[\texttt{plain}\hfill]
 		No headlines, footlines, sidebars; e.g. for large images\\
 		\gray{To also remove background images use:
 		\texttt{\{\textbackslash usebackgroundtemplate\{\}[...]\}}}
-		\item[\tech{squeeze}\hfill]
+		\item[\texttt{squeeze}\hfill]
 		Squeezes vertical spaces, e.g. for long contents
-		\item[\tech{shrink}\hfill]
+		\item[\texttt{shrink}\hfill]
 		Shrinks frame, e.g. for long contents
 	\end{description}
 	\lstset{language=TeX, escapechar=\@, morekeywords={begin,end,frame}, emph={fragile}}
@@ -171,6 +178,46 @@
 		\item {\color{textturquoise}\rule{.7cm}{.4cm} textturquoise}
 		\item {\color{textgreen}\rule{.7cm}{.4cm} textgreen}
 		\item {\color{textgray}\rule{.7cm}{.4cm} textgray}
+		\item {\color{textmagenta}\rule{.7cm}{.4cm} textmagenta} (prefer red and purple)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Appendix}{Predefined Element Colors}
+	\begin{itemize}
+		\item {\color{elementblue}\rule{.7cm}{.4cm} elementblue}
+		\item {\color{elementorange}\rule{.7cm}{.4cm} elementorange}
+		\item {\color{elementgreen}\rule{.7cm}{.4cm} elementgreen}
+		\item {\color{elementred}\rule{.7cm}{.4cm} elementred}
+		\item {\color{elementyellow}\rule{.7cm}{.4cm} elementyellow}
+		\item {\color{elementgray}\rule{.7cm}{.4cm} elementgray}
+		\item {\color{elementpurple}\rule{.7cm}{.4cm} elementpurple}
+		\item {\color{elementturquoise}\rule{.7cm}{.4cm} elementturquoise}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Appendix}{Predefined Light Colors}
+	\begin{itemize}
+		\item {\color{lightblue}\rule{.7cm}{.4cm} lightblue}
+		\item {\color{lightorange}\rule{.7cm}{.4cm} lightorange}
+		\item {\color{lightgreen}\rule{.7cm}{.4cm} lightgreen}
+		\item {\color{lightred}\rule{.7cm}{.4cm} lightred}
+		\item {\color{lightyellow}\rule{.7cm}{.4cm} lightyellow}
+		\item {\color{lightgray}\rule{.7cm}{.4cm} lightgray}
+		\item {\color{lightpurple}\rule{.7cm}{.4cm} lightpurple}
+		\item {\color{lightturquoise}\rule{.7cm}{.4cm} lightturquoise}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Appendix}{Predefined Background Colors}
+	\begin{itemize}
+		\item {\color{backgroundblue}\rule{.7cm}{.4cm}} backgroundblue
+		\item {\color{backgroundorange}\rule{.7cm}{.4cm}} backgroundorange
+		\item {\color{backgroundgreen}\rule{.7cm}{.4cm}} backgroundgreen
+		\item {\color{backgroundred}\rule{.7cm}{.4cm}} backgroundred
+		\item {\color{backgroundyellow}\rule{.7cm}{.4cm}} backgroundyellow
+		\item {\color{backgroundgray}\rule{.7cm}{.4cm}} backgroundgray
+		\item {\color{backgroundpurple}\rule{.7cm}{.4cm}} backgroundpurple
+		\item {\color{backgroundturquoise}\rule{.7cm}{.4cm}} backgroundturquoise
 	\end{itemize}
 \end{frame}
 
