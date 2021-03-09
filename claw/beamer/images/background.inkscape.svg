@@ -118,6 +118,14 @@
          clip-rule="evenodd"
          id="path28-3" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath30-2">
+      <path
+         d="M 35.4,0 H 719.9 V 540 H 35.4 Z"
+         clip-rule="evenodd"
+         id="path28-7" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -127,10 +135,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="246.57037"
-     inkscape:cy="98.343191"
+     inkscape:cx="253.8144"
+     inkscape:cy="188.52142"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer6"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:showpageshadow="false"
@@ -139,7 +147,7 @@
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      inkscape:snap-global="true"
      inkscape:snap-page="true"
@@ -191,6 +199,38 @@
     <inkscape:grid
        type="xygrid"
        id="grid969" />
+    <sodipodi:guide
+       position="16.196702,90.336235"
+       orientation="0,-1"
+       id="guide969" />
+    <sodipodi:guide
+       position="18.18923,91.072133"
+       orientation="1,0"
+       id="guide1067" />
+    <sodipodi:guide
+       position="109.81076,88.675998"
+       orientation="1,0"
+       id="guide1089" />
+    <sodipodi:guide
+       position="2.3164623,88.675998"
+       orientation="1,0"
+       id="guide1091" />
+    <sodipodi:guide
+       position="5.426216,94.208813"
+       orientation="0,-1"
+       id="guide1093" />
+    <sodipodi:guide
+       position="112.14957,93.183896"
+       orientation="0,-1"
+       id="guide1100" />
+    <sodipodi:guide
+       position="111.94539,88.062824"
+       orientation="0,-1"
+       id="guide1102" />
+    <sodipodi:guide
+       position="123.48063,89.355437"
+       orientation="1,0"
+       id="guide1104" />
   </sodipodi:namedview>
   <metadata
      id="metadata836">
@@ -206,35 +246,10 @@
   </metadata>
   <g
      inkscape:groupmode="layer"
-     id="layer7"
-     inkscape:label="Logo-Right"
-     style="display:inline">
-    <rect
-       style="fill:#3a78b8;fill-opacity:1;stroke-width:1.41117;stroke-linecap:round;stroke-miterlimit:2;paint-order:stroke fill markers"
-       id="rect8529"
-       width="13.669897"
-       height="5.1210723"
-       x="109.82394"
-       y="3.2039723" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer8"
-     inkscape:label="Logo-Left"
-     style="display:inline">
-    <rect
-       style="display:inline;fill:#00205b;fill-opacity:0.996078;stroke-width:1.2781;stroke-linecap:round;stroke-miterlimit:2;paint-order:stroke fill markers"
-       id="rect8531"
-       width="15.872768"
-       height="5.5571041"
-       x="2.3164625"
-       y="1.7974014" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="Helper"
-     style="display:inline">
+     style="display:none"
+     sodipodi:insensitive="true">
     <rect
        style="display:inline;fill:#000000;fill-opacity:1;stroke-width:1.12387;stroke-linecap:round;stroke-miterlimit:2;paint-order:stroke fill markers"
        id="rect6759-8"
@@ -249,5 +264,54 @@
        height="2.680999"
        x="31.829681"
        y="3.7250004" />
+    <rect
+       style="display:inline;fill:#ff00ff;stroke:none;stroke-width:0.80331;stroke-miterlimit:2;paint-order:markers stroke fill;stop-color:#000000"
+       id="rect1081"
+       width="18.18923"
+       height="1.3876411"
+       x="0"
+       y="5.9363589" />
+    <rect
+       style="display:inline;fill:#ff00ff;stroke:none;stroke-width:0.80331;stroke-miterlimit:2;paint-order:markers stroke fill;stop-color:#000000"
+       id="rect1081-6"
+       width="18.18923"
+       height="1.3876411"
+       x="109.81076"
+       y="5.9363585" />
+    <rect
+       style="fill:#00ff00;stroke-width:1.33906;stroke-miterlimit:2;paint-order:markers stroke fill;stop-color:#000000"
+       id="rect1095"
+       width="0.17344144"
+       height="0.55148709"
+       x="16.109982"
+       y="5.3880186" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Logo-Right"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#3a78b8;fill-opacity:1;stroke-width:1.41117;stroke-linecap:round;stroke-miterlimit:2;paint-order:stroke fill markers"
+       id="rect8529"
+       width="13.669873"
+       height="5.1210723"
+       x="109.81076"
+       y="2.8161013" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Logo-Left"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="display:inline;fill:#00205b;fill-opacity:0.996078;stroke-width:1.2753;stroke-linecap:round;stroke-miterlimit:2;paint-order:stroke fill markers"
+       id="rect8531"
+       width="15.872768"
+       height="5.532815"
+       x="2.3164625"
+       y="1.7911844" />
   </g>
 </svg>
