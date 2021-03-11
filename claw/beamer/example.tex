@@ -1,6 +1,6 @@
 % Source: https://github.com/adibaba/templates
 % Author: Adrian Wilke
-% Date:   2021-03-08
+% Date:   2021-03-11
 
 \documentclass{beamer}
 
@@ -113,7 +113,7 @@
 	\begin{itemize}
 		\item You could \emph{emphasize} important parts \\(Maybe distinguish between \bad{problems} and \good{solutions})
 		\item Use alert to display \alert{warnings}
-		\item Use the url command for links (\url{https://github.com/adibaba/templates}) or href (\href{https://github.com/adibaba/templates}{template})
+		\item Use the url command (\url{https://dice-research.org/}) or the href command (\href{https://dice-research.org/}{DICE}) for links
 		\item Highlight ``\term{predefined terms}'' like brands and\\ \tech{TechnicalTerms} like software components
 	\end{itemize}
 \end{frame}
@@ -124,7 +124,16 @@
 	\begin{itemize}
 		\item Text styles: \textbf{bold}, \textit{italic}, \underline{underlined}, \textsc{small caps}
 		\item Font families: \texttt{monospaced}, \textsf{sans serif}, \textrm{roman}
-		\item Text colors: \orange{orange}, \red{red}, \purple{purple}, \darkblue{darkblue}, \blue{blue}, \turquoise{turquoise}, \green{green}, \gray{gray}, (\magenta{magenta})
+		\item Text colors:
+			\bluedark{bluedark},
+			\gray{gray},
+			\magenta{magenta},
+			\blue{blue},
+			\orange{orange},
+			\purple{purple},
+			\red{red},
+			\turquoise{turquoise},
+			\green{green}
 		\item Text sizes: {\tiny tiny}, {\scriptsize scriptsize}, {\footnotesize footnotesize}, {\small small}, {\normalsize normalsize}, {\large large}, {\Large Large}, {\LARGE LARGE}, {\huge huge}, {\Huge Huge}
 	\end{itemize}
 \end{frame}
@@ -205,56 +214,82 @@
 \section{Appendix \& References}
 \appendix 
 
+\begin{frame}{Appendix}{Predefined Base Colors}
+	\begin{itemize}
+		\item {\color{primarybluedark}\rule{.7cm}{.4cm} primarybluedark}
+		\item {\color{primarybluelight}\rule{.7cm}{.4cm} primarybluelight}
+		\item {\color{primarygraylight}\rule{.7cm}{.4cm} primarygraylight}
+		\item {\color{primarygraydark}\rule{.7cm}{.4cm} primarygraydark}
+		\item {\color{secondarymagenta}\rule{.7cm}{.4cm} secondarymagenta}
+		\item {\color{secondaryblue}\rule{.7cm}{.4cm} secondaryblue}
+		\item {\color{secondarygreen}\rule{.7cm}{.4cm} secondarygreen}
+		\item {\color{secondaryorange}\rule{.7cm}{.4cm} secondaryorange}
+		\item {\color{secondarypurple}\rule{.7cm}{.4cm} secondarypurple}
+		\item {\color{activeyellow}\rule{.7cm}{.4cm} activeyellow}
+		\item {\color{activered}\rule{.7cm}{.4cm} activered}
+		\item {\color{activeturquoise}\rule{.7cm}{.4cm} activeturquoise}
+		\item {\color{activegreen}\rule{.7cm}{.4cm} activegreen}
+		\item {\color{specificblue}\rule{.7cm}{.4cm} specificblue}
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Appendix}{Predefined Text Colors}
 	\begin{itemize}
-		\item {\color{textorange}\rule{.7cm}{.4cm} textorange}
-		\item {\color{textred}\rule{.7cm}{.4cm} textred}
-		\item {\color{textpurple}\rule{.7cm}{.4cm} textpurple}
-		\item {\color{textdarkblue}\rule{.7cm}{.4cm} textdarkblue}
+		\item {\color{textbluedark}\rule{.7cm}{.4cm} textdarkblue}
+		\item {\color{textgray}\rule{.7cm}{.4cm} textgray}
+		\item {\color{textmagenta}\rule{.7cm}{.4cm} textmagenta}
 		\item {\color{textblue}\rule{.7cm}{.4cm} textblue}
+		\item {\color{textorange}\rule{.7cm}{.4cm} textorange}
+		\item {\color{textpurple}\rule{.7cm}{.4cm} textpurple}
+		\item {\color{textred}\rule{.7cm}{.4cm} textred}
 		\item {\color{textturquoise}\rule{.7cm}{.4cm} textturquoise}
 		\item {\color{textgreen}\rule{.7cm}{.4cm} textgreen}
-		\item {\color{textgray}\rule{.7cm}{.4cm} textgray}
-		\item {\color{textmagenta}\rule{.7cm}{.4cm} textmagenta} (prefer red and purple)
+		\item {\color{textbluespecific}\rule{.7cm}{.4cm} textbluespecific}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Appendix}{Predefined Element Colors}
 	\begin{itemize}
+		\item {\color{elementgray}\rule{.7cm}{.4cm} elementgray}
+		\item {\color{elementmagenta}\rule{.7cm}{.4cm} elementmagenta}
 		\item {\color{elementblue}\rule{.7cm}{.4cm} elementblue}
 		\item {\color{elementorange}\rule{.7cm}{.4cm} elementorange}
-		\item {\color{elementgreen}\rule{.7cm}{.4cm} elementgreen}
-		\item {\color{elementred}\rule{.7cm}{.4cm} elementred}
-		\item {\color{elementyellow}\rule{.7cm}{.4cm} elementyellow}
-		\item {\color{elementgray}\rule{.7cm}{.4cm} elementgray}
 		\item {\color{elementpurple}\rule{.7cm}{.4cm} elementpurple}
+		\item {\color{elementyellow}\rule{.7cm}{.4cm} elementyellow}
+		\item {\color{elementred}\rule{.7cm}{.4cm} elementred}
 		\item {\color{elementturquoise}\rule{.7cm}{.4cm} elementturquoise}
+		\item {\color{elementgreen}\rule{.7cm}{.4cm} elementgreen}
+		\item {\color{elementbluespecific}\rule{.7cm}{.4cm} elementbluespecific}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Appendix}{Predefined Light Colors}
 	\begin{itemize}
+		\item {\color{lightgray}\rule{.7cm}{.4cm} lightgray}
+		\item {\color{lightmagenta}\rule{.7cm}{.4cm} lightmagenta}
 		\item {\color{lightblue}\rule{.7cm}{.4cm} lightblue}
 		\item {\color{lightorange}\rule{.7cm}{.4cm} lightorange}
-		\item {\color{lightgreen}\rule{.7cm}{.4cm} lightgreen}
-		\item {\color{lightred}\rule{.7cm}{.4cm} lightred}
-		\item {\color{lightyellow}\rule{.7cm}{.4cm} lightyellow}
-		\item {\color{lightgray}\rule{.7cm}{.4cm} lightgray}
 		\item {\color{lightpurple}\rule{.7cm}{.4cm} lightpurple}
+		\item {\color{lightyellow}\rule{.7cm}{.4cm} lightyellow}
+		\item {\color{lightred}\rule{.7cm}{.4cm} lightred}
 		\item {\color{lightturquoise}\rule{.7cm}{.4cm} lightturquoise}
+		\item {\color{lightgreen}\rule{.7cm}{.4cm} lightgreen}
+		\item {\color{lightbluespecific}\rule{.7cm}{.4cm} lightbluespecific}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Appendix}{Predefined Background Colors}
 	\begin{itemize}
+		\item {\color{backgroundgray}\rule{.7cm}{.4cm}} backgroundgray
+		\item {\color{backgroundmagenta}\rule{.7cm}{.4cm}} backgroundmagenta
 		\item {\color{backgroundblue}\rule{.7cm}{.4cm}} backgroundblue
 		\item {\color{backgroundorange}\rule{.7cm}{.4cm}} backgroundorange
-		\item {\color{backgroundgreen}\rule{.7cm}{.4cm}} backgroundgreen
-		\item {\color{backgroundred}\rule{.7cm}{.4cm}} backgroundred
-		\item {\color{backgroundyellow}\rule{.7cm}{.4cm}} backgroundyellow
-		\item {\color{backgroundgray}\rule{.7cm}{.4cm}} backgroundgray
 		\item {\color{backgroundpurple}\rule{.7cm}{.4cm}} backgroundpurple
+		\item {\color{backgroundyellow}\rule{.7cm}{.4cm}} backgroundyellow
+		\item {\color{backgroundred}\rule{.7cm}{.4cm}} backgroundred
 		\item {\color{backgroundturquoise}\rule{.7cm}{.4cm}} backgroundturquoise
+		\item {\color{backgroundgreen}\rule{.7cm}{.4cm}} backgroundgreen
+		\item {\color{backgroundbluespecific}\rule{.7cm}{.4cm}} backgroundbluespecific
 	\end{itemize}
 \end{frame}
 

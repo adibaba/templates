@@ -1,69 +1,24 @@
 % Source: https://github.com/adibaba/templates
 % Author: Adrian Wilke
-% Date:   2021-03-10
+% Date:   2021-03-11
 
 
 
-% Disable navigation symbols
-\setbeamertemplate{navigation symbols}{}
+% Configuration
 
 % Path for images
 \graphicspath{{./images/}}
-
-% Move title page contents down
-\addtobeamertemplate{title page}{\vspace{2\baselineskip}}{}
-
-
 
 % OPTIONAL: Background image with logos
 %\usebackgroundtemplate{\includegraphics[width=\paperwidth]{background}}
 % Reduce max. frame title width (no logo overlap)
 %\renewcommand{\frametitlewidth}{.8\textwidth}
 
-% OPTIONAL: Alternative colors
-%\setbeamercolor{palette primary}{bg=lightgray}
-%\setbeamercolor{palette secondary}{bg=lightgray}
-%\setbeamercolor{palette tertiary}{bg=lightgray}
-%\setbeamercolor{frametitle}{bg=lightgray}
-
-% OPTIONAL: Alternative footer
-%\useoutertheme{infolines}
-%\setbeamertemplate{headline}{}
-%\setbeamerfont{title in head/foot}{series=\mdseries}
-
-
-
-% Optional packages
-% Can be removed if not used
-
-% pgf – Create PostScript and PDF graphics in TEX
-% https://www.ctan.org/pkg/pgf
-\usepackage{tikz}
-\usetikzlibrary{shapes,positioning}
-\usetikzlibrary{arrows.meta,arrows}
-\tikzset{resource/.style={draw,rectangle,fill=lightblue,rounded corners,inner sep=5pt} }
-\tikzset{literal/.style={draw,rectangle,fill=lightgreen,inner sep=5pt}}
-\tikzset{>=triangle 45}
-\tikzset{every picture/.style=thick}
-\tikzstyle{every node}=[font=\small]
-
-% listings – Typeset source code listings using LATEX
-% https://ctan.org/pkg/listings
-\usepackage{listings}
-\lstset{
-	basicstyle=\small\ttfamily,
-	%
-	keywordstyle=\color{textblue},
-	commentstyle=\color{textgray},
-	emphstyle=\color{textpurple},
-	%
-	numbers=left,
-	numbersep=7pt,
-	numberstyle=\scriptsize\color{textgray}\ttfamily,
-	%
-	tabsize=2,
-	breaklines=true
-}
+% OPTIONAL: Replace blue with specific blue
+%\colorlet{textblue}{textbluespecific}
+%\colorlet{elementblue}{elementbluespecific}
+%\colorlet{lightblue}{lightbluespecific}
+%\colorlet{backgroundblue}{backgroundbluespecific}
 
 
 
@@ -111,30 +66,87 @@
 % tgheros
 \usepackage{tgheros}
 
+% Font Roboto Condensed
+% https://tug.org/FontCatalogue/robotocondensed/
+% https://ctan.org/pkg/roboto
+\usepackage[sfdefault,condensed]{roboto}
+
 % Alternative: Arial Narrow
 % Fontspec requires XeTeX or LuaTeX, not PDFLaTeX
 %\usepackage{fontspec}
 %\setsansfont[Ligatures=TeX]{Arial Narrow}
 
-% Font Roboto Condensed
-% https://tug.org/FontCatalogue/robotocondensed/
-% https://ctan.org/pkg/roboto
-\usepackage[sfdefault,condensed]{roboto}
+
+
+% Optional packages
+% Can be removed if not used
+
+% pgf – Create PostScript and PDF graphics in TEX
+% https://www.ctan.org/pkg/pgf
+\usepackage{tikz}
+\usetikzlibrary{shapes,positioning}
+\usetikzlibrary{arrows.meta,arrows}
+\tikzset{resource/.style={draw,rectangle,fill=lightblue,rounded corners,inner sep=5pt} }
+\tikzset{literal/.style={draw,rectangle,fill=lightgreen,inner sep=5pt}}
+\tikzset{>=triangle 45}
+\tikzset{every picture/.style=thick}
+\tikzstyle{every node}=[font=\small]
+
+% listings – Typeset source code listings using LATEX
+% https://ctan.org/pkg/listings
+\usepackage{listings}
+\lstset{
+	basicstyle=\small\ttfamily,
+	%
+	keywordstyle=\color{textblue},
+	commentstyle=\color{textgray},
+	emphstyle=\color{textpurple},
+	%
+	numbers=left,
+	numbersep=7pt,
+	numberstyle=\scriptsize\color{textgray}\ttfamily,
+	%
+	tabsize=2,
+	breaklines=true
+}
+
+
+
+% Beamer settings
+
+% Disable navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Move title page contents down
+\addtobeamertemplate{title page}{\vspace{2\baselineskip}}{}
+
+% OPTIONAL: Alternative footer
+%\useoutertheme{infolines}
+%\setbeamertemplate{headline}{}
+%\setbeamerfont{title in head/foot}{series=\mdseries}
+
+% OPTIONAL: Alternative header/footer colors
+%\setbeamercolor{palette primary}{bg=lightgray}
+%\setbeamercolor{palette secondary}{bg=lightgray}
+%\setbeamercolor{palette tertiary}{bg=lightgray}
+%\setbeamercolor{frametitle}{bg=lightgray}
 
 
 
 % Commands
 
 % Text color
-\newcommand{\orange}[1]{\textcolor{textorange}{#1}}
-\newcommand{\red}[1]{\textcolor{textred}{#1}}
-\newcommand{\magenta}[1]{\textcolor{textmagenta}{#1}}
-\newcommand{\purple}[1]{\textcolor{textpurple}{#1}}
+\newcommand{\bluedark}[1]{\textcolor{textbluedark}{#1}}
 \newcommand{\blue}[1]{\textcolor{textblue}{#1}}
-\newcommand{\darkblue}[1]{\textcolor{textdarkblue}{#1}}
+\newcommand{\gray}[1]{\textcolor{textgray}{#1}}
+%
+\newcommand{\magenta}[1]{\textcolor{textmagenta}{#1}}
+\newcommand{\orange}[1]{\textcolor{textorange}{#1}}
+\newcommand{\purple}[1]{\textcolor{textpurple}{#1}}
+%
+\newcommand{\red}[1]{\textcolor{textred}{#1}}
 \newcommand{\turquoise}[1]{\textcolor{textturquoise}{#1}}
 \newcommand{\green}[1]{\textcolor{textgreen}{#1}}
-\newcommand{\gray}[1]{\textcolor{textgray}{#1}}
 
 % Predefined text concepts
 \renewcommand{\alert}[1]{\textbf{\red{#1}}}
@@ -144,3 +156,21 @@
 \newcommand{\heading}[1]{\textbf{#1}\\\vspace*{.05cm}}
 \newcommand{\tech}[1]{\gray{\texttt{#1}}}
 \newcommand{\term}[1]{\gray{\textit{#1}}}
+
+% OPTIONAL: Example blocks in green instead of turquoise
+%\setbeamercolor{block title example}{bg=lightgreen,fg=templatetext}
+%\setbeamercolor{block body example}{bg=backgroundgreen}
+% OPTIONAL: Positive highlights in green instead of turquoise
+%\renewcommand{\good}[1]{\green{#1}}
+
+% OPTIONAL: Alert blocks in red instead of purple
+%\setbeamercolor{block title alerted}{bg=lightred,fg=templatetext}
+%\setbeamercolor{block body alerted}{bg=backgroundred}
+% OPTIONAL: Negative highlights in red instead of purple
+%\renewcommand{\bad}[1]{\red{#1}}
+
+% OPTIONAL: Alert blocks in magenta instead of purple
+%\setbeamercolor{block title alerted}{bg=lightmagenta,fg=templatetext}
+%\setbeamercolor{block body alerted}{bg=backgroundmagenta}
+% OPTIONAL: Negative highlights in magenta instead of purple
+%\renewcommand{\bad}[1]{\magenta{#1}}
